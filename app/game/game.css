@@ -1,0 +1,60 @@
+.card {
+  float:left;
+  margin:10px;
+  width: 90px;
+  height: 90px;
+  border-radius: 20px;
+}
+
+.card.red {
+  background-color: red;
+  border:1px red solid;
+}
+.card.blue {
+  background-color: blue;
+  border:1px blue solid;
+}
+.card.green {
+  background-color: green;
+  border:1px green solid;
+}
+
+.card.solid {
+  /*fine as is*/
+}
+.card.stripped div{
+  background-color: inherit;
+  border-radius: inherit;
+  border: 20px black solid;
+  width: inherit;
+  height: inherit;
+  margin: inherit;
+}
+.card.outline div {
+  margin: 9px;
+  width: 70px;
+  height: 70px;
+  background-color: white;
+  border-radius: inherit;
+}
+
+.card.circle {
+  border-radius: 45px;
+}
+.card.diamond {
+  border-radius: 0px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.card.square {
+  /*fine as is*/
+}
+
+
+.card.active{
+  color:red;
+  font-weight: 900;
+}
