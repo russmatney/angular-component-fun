@@ -1,6 +1,25 @@
+
+.stage{
+  margin:40px auto;
+  width:450px;
+}
+
+.scoreboard{
+  margin-top:40px;
+  clear:both;
+}
+
+.score{
+  font-size: 20px;
+}
+.timer{
+  float:right;
+  font-size: 20px;
+}
+
 .card {
   float:left;
-  margin:10px;
+  margin:30px;
   width: 90px;
   height: 90px;
   border-radius: 20px;
@@ -49,12 +68,24 @@
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-.card.square {
+.card .square {
   /*fine as is*/
 }
 
 
 .card.active{
-  color:red;
-  font-weight: 900;
+  -webkit-transform: scale(0.8, 0.8);
+  -moz-transform: scale(0.8, 0.8);
+  -ms-transform: scale(0.8, 0.8);
+  -o-transform: scale(0.8, 0.8);
+  transform: scale(0.8, 0.8);
+}
+/*ugly*/
+.card.diamond.active{
+  -webkit-transform: scale(0.8, 0.8) rotate(45deg);
+  -moz-transform: scale(0.8, 0.8) rotate(45deg);
+  -ms-transform: scale(0.8, 0.8) rotate(45deg);
+  -o-transform: scale(0.8, 0.8) rotate(45deg);
+  transform: scale(0.8, 0.8) rotate(45deg);
+  border-radius: 0px;
 }

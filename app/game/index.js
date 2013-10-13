@@ -50,6 +50,18 @@ angular.module('game').controller('GameCtrl', ['$scope', 'checkWin', 'cardFactor
   console.log('game controller');
   $scope.score = 0;
 
+  $scope.time = 0;
+
+  var update = function(){
+    setTimeout(function(){
+      $scope.time = $scope.time + 1;
+      update();
+      $scope.$digest();
+    }, 1000);
+  };
+
+  update();
+
   $scope.cards = cardFactory.generateCards(9);
   $scope.set = [];
 
@@ -123,7 +135,7 @@ angular.module('game').controller('CardCtrl', ['$scope', function ($scope){
     }
 
     if(card.selected){
-      classes += 'active '
+      classes += ' active '
     }
     
     return classes;
