@@ -41,13 +41,8 @@
 .card.solid {
   /*fine as is*/
 }
-.card.stripped div{
-  background-color: inherit;
-  border-radius: inherit;
-  border: 20px black solid;
-  width: inherit;
-  height: inherit;
-  margin: inherit;
+.card.stripped{
+  border: 8px white dotted;
 }
 .card.outline div {
   margin: 9px;
